@@ -1,0 +1,28 @@
+$date
+	Sun Jul 27 20:49:29 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module mux21_data_tb $end
+$var wire 1 ! y $end
+$var reg 2 " I [1:0] $end
+$var reg 1 # S $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0#
+b1 "
+1!
+$end
+#10
+0!
+1#
+#20

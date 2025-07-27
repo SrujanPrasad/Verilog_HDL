@@ -1,0 +1,59 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_0000027947b5ac70 .scope module, "mux21_data_tb" "mux21_data_tb" 2 1;
+ .timescale 0 0;
+v0000027947b5be50_0 .var "I", 1 0;
+v0000027947b5bef0_0 .var "S", 0 0;
+v0000027947a26460_0 .net "y", 0 0, L_0000027947a26640;  1 drivers
+S_0000027947a262d0 .scope module, "dut" "mux21_data" 2 7, 3 1 0, S_0000027947b5ac70;
+ .timescale 0 0;
+    .port_info 0 /INPUT 2 "I";
+    .port_info 1 /INPUT 1 "S";
+    .port_info 2 /OUTPUT 1 "y";
+v0000027947b58ec0_0 .net "I", 1 0, v0000027947b5be50_0;  1 drivers
+v0000027947b56c60_0 .net "S", 0 0, v0000027947b5bef0_0;  1 drivers
+v0000027947b5ae00_0 .net *"_ivl_1", 0 0, L_0000027947a26500;  1 drivers
+v0000027947b5aea0_0 .net *"_ivl_3", 0 0, L_0000027947a265a0;  1 drivers
+v0000027947b5bdb0_0 .net "y", 0 0, L_0000027947a26640;  alias, 1 drivers
+L_0000027947a26500 .part v0000027947b5be50_0, 1, 1;
+L_0000027947a265a0 .part v0000027947b5be50_0, 0, 1;
+L_0000027947a26640 .functor MUXZ 1, L_0000027947a265a0, L_0000027947a26500, v0000027947b5bef0_0, C4<>;
+    .scope S_0000027947b5ac70;
+T_0 ;
+    %vpi_call 2 11 "$dumpfile", "dump.vcd" {0 0 0};
+    %vpi_call 2 12 "$dumpvars", 32'sb00000000000000000000000000000001 {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_0000027947b5ac70;
+T_1 ;
+    %pushi/vec4 1, 0, 1;
+    %ix/load 4, 0, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4 v0000027947b5be50_0, 4, 1;
+    %pushi/vec4 0, 0, 1;
+    %ix/load 4, 1, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4 v0000027947b5be50_0, 4, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000027947b5bef0_0, 0, 1;
+    %delay 10, 0;
+    %vpi_call 2 20 "$display", "Output when S=%d is : %d", v0000027947b5bef0_0, v0000027947a26460_0 {0 0 0};
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000027947b5bef0_0, 0, 1;
+    %delay 10, 0;
+    %vpi_call 2 22 "$display", "Output when S=%d is : %d", v0000027947b5bef0_0, v0000027947a26460_0 {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "mux21_data_tb.v";
+    "mux21_data.v";
