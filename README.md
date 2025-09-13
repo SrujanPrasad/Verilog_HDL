@@ -2,7 +2,7 @@
 This repository contains all the verilog codes of combinational and seqeuntial circuits along with some applications.
 
 
-## 1. Basic Gates 
+## 1. Basic Gates ([basicgates.v](https://github.com/SrujanPrasad/Verilog_HDL/blob/92a01f1ac8343a7a2d3b6f56d96853b9cda1544f/Basic%20Gates/basicgates.v))
 
 The basic gates are : 
 ```mermaid
