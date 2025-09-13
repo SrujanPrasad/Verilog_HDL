@@ -20,10 +20,10 @@ The simulation results for the basic gates are shown in the images below.
 
 <img width="968" height="307" alt="Basic_gates_waveforms" src="https://github.com/user-attachments/assets/3d1bc374-e4b9-4450-9a91-4858cc03f636" /> 
 
-y[0] represents the NOT operation of a
-y[1] represents the AND operation of a and b
-y[2] represents the OR operation of a and b
-y[3] represents the NAND operation of a and b
-y[4] represents the NOR operation of a and b
-y[5] represents the XOR operation of a and b
-y[6] represents the XNOR operation of a and b
+- y[0] represents the NOT operation of a
+- y[1] represents the AND operation of a and b
+- y[2] represents the OR operation of a and b
+- y[3] represents the NAND operation of a and b
+- y[4] represents the NOR operation of a and b
+- y[5] represents the XOR operation of a and b
+- y[6] represents the XNOR operation of a and b
