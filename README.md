@@ -27,3 +27,17 @@ The simulation results for the basic gates are shown in the images below.
 - y[4] represents the NOR operation of a and b
 - y[5] represents the XOR operation of a and b
 - y[6] represents the XNOR operation of a and b
+
+## 2. Combinational Circuits 
+```mermaid
+graph TD;
+comb-->HalfAdder;
+comb-->FullAdder;
+comb-->Multiplexer;
+comb-->Demultiplexer;
+comb-->Encoder;
+comb-->Decoder;
+comb-->PriorityEncoder;
+```
+
+
